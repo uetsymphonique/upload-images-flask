@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Update Image Title{% endblock %}
+{% block content %}
+<h1>Update Image Title</h1>
+<form method="post">
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" name="title" value="{{ image[2] }}" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Current Filename (not editable)</label>
+        <input type="text" class="form-control" value="{{ image[1] }}" readonly>
+    </div>
+    <button type="submit" class="btn btn-primary">Update Title</button>
+</form>
+{% endblock %}
