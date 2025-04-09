@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 # Load configuration from config.ini
 config = configparser.ConfigParser()
-config_path = '/var/www/myapp/config.ini'  # Absolute path to config.ini
+config_path = '/var/www/upload-images-flask/config.ini'  # Absolute path to config.ini
 config.read(config_path)
 
 # Set Flask secret key from config.ini
